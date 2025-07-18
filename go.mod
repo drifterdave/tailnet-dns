@@ -4,6 +4,8 @@ go 1.24.2
 
 toolchain go1.24.5
 
+replace github.com/caddyserver/caddy v1.0.5 => github.com/caddyserver/caddy/v2 v2.10.0
+
 require (
 	github.com/coredns/coredns v1.12.2
 	github.com/damomurf/coredns-tailscale v0.3.16
