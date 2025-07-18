@@ -1,17 +1,25 @@
-# fly.toml docs and default values at https://fly.io/docs/reference/configuration/
+# fly.toml app configuration file generated for tailnet-dns-autumn-glade-5906 on 2025-07-18T12:15:17-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-app = "tailnet-dns"
-primary_region = "ews"
+app = 'tailnet-dns-autumn-glade-5906'
+primary_region = 'ewr'
 
-# TS_AUTHKEY specified in fly secrets
+[build]
 
 [[mounts]]
-  source = "ipn_dns_root"
-  destination = "/root"
+  source = 'ipn_dns_root'
+  destination = '/root'
 
 [[services]]
-  protocol = "udp"
+  protocol = 'udp'
   internal_port = 53
 
   [[services.ports]]
     port = 53
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
