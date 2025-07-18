@@ -5,8 +5,8 @@ ts.0x3b.io {
     @   300 IN NS ns1.ts.0x3b.io.
     @   300 IN NS ns2.ts.0x3b.io.
 
-    ns1 300 IN A   169.155.53.28 
-    ns2 300 IN A   169.155.53.28 
+    ns1 300 IN A  169.155.53.28 
+    ns2 300 IN A  169.155.53.28 
 
     $OPTION fallthrough
   }
