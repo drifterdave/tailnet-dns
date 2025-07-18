@@ -1,16 +1,16 @@
-ipn.willnorris.net {
+ts.0x3b.io {
   records {
     # Some resolvers will recheck for NS records at the delegate nameserver.
     # Manually specify these here, since they won't appear in the Tailscale node list.
-    @   300 IN NS ns1.ipn.willnorris.net.
-    @   300 IN NS ns2.ipn.willnorris.net.
+    @   300 IN NS ns1.ts.0x3b.io.
+    @   300 IN NS ns2.ts.0x3b.io.
 
-    ns1 300 IN A  37.16.12.98
-    ns2 300 IN A  37.16.12.98
+    ns1 300 IN A  192.3.211.158
+    ns2 300 IN A  192.3.211.158
 
     $OPTION fallthrough
   }
-  tailscale ipn.willnorris.net {
+  tailscale ts.0x3b.io {
     authkey {$TS_AUTHKEY}
   }
   log
